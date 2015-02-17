@@ -87,6 +87,10 @@ public class MainActivity extends ListActivity {
             Intent intent2 = new Intent(this, intent_implicitos.class);
             startActivity(intent2);
         }
+        else if(position == 5) {
+            Intent intent2 = new Intent(this, Actividad8MasterDetail.class);
+            startActivity(intent2);
+        }
         else if(position == 6) {
             Intent intent2 = new Intent(this, Actividad9Fragments.class);
             startActivity(intent2);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="listactivity.miguel.com.ejerciciolistactivity" >
-    
+
 
     <application
         android:allowBackup="true"
@@ -57,6 +57,10 @@
         <activity
             android:name=".intent_implicitos"
             android:label="@string/title_activity_intent_implicitos" >
+        </activity>
+        <activity
+            android:name=".Actividad8MasterDetail"
+            android:label="@string/Activity8" >
         </activity>
     </application>
 
