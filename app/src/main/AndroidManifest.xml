@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="listactivity.miguel.com.ejerciciolistactivity" >
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Intents_Act_01"
+            android:label="@string/title_activity_intents__act_01"
+            android:parentActivityName=".Intents_Act_01" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_01_b"
+            android:label="@string/title_activity_intents__act_01_b" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_02"
+            android:label="@string/title_activity_intents__act_02" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_02_b"
+            android:label="@string/title_activity_intents__act_02_b" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_03"
+            android:label="@string/title_activity_intents__act_03" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_03_b"
+            android:label="@string/title_activity_intents__act_03_b" >
+        </activity>
+        <activity
+            android:name=".Notificaciones"
+            android:label="@string/title_activity_notificaciones" >
+        </activity>
+        <activity
+            android:name=".DialogoConProgress"
+            android:label="@string/title_activity_dialogo_con_progress" >
+        </activity>
+        <activity
+            android:name=".Actividad9Fragments"
+            android:label="@string/fragmento1" >
+        </activity>
+        <activity
+            android:name=".intent_implicitos"
+            android:label="@string/title_activity_intent_implicitos" >
+        </activity>
+    </application>
+
+</manifest>
