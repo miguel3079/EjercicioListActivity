@@ -36,5 +36,8 @@
     <string name="twittertextoinvitar">titter</string>
     <string name="Linkglobalapk">titter</string>
     <string name="Activity8">Actividad 8</string>
+    <string name="title_activity_broadcast_receivers_archivo">BroadcastReceiversArchivo</string>
+    <string name="title_activity_llamada">llamada</string>
+    <string name="title_activity_llamada_broadcast">LLamadaBroadcast</string>
 
 </resources>

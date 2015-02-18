@@ -57,12 +57,10 @@ public class intent_implicitos extends ActionBarActivity {
 
 
     public void onClickMapa(View v) {
-        float latitude = 40.3736f;
-        float longitude = -3.919848f;
-        String url = String.format("geo:%f, %f", latitude, longitude);
-        Intent i = new Intent(android.content.Intent.ACTION_VIEW,
-                Uri.parse(url));
-        startActivity(i);
+
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                Uri.parse("http://maps.google.com/maps?saddr=40.3736f4&daddr=-3.919848f"));
+        startActivity(intent);
     }
 
     public void onClickLlamada(View v) {

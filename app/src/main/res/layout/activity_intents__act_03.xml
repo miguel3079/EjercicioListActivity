@@ -12,5 +12,6 @@
         android:text="Muestra la segunda actividad"
         android:id="@+id/button4"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onClic" />
 </RelativeLayout>

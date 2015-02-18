@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="listactivity.miguel.com.ejerciciolistactivity" >
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -20,7 +19,7 @@
         <activity
             android:name=".Intents_Act_01"
             android:label="@string/title_activity_intents__act_01"
-            android:parentActivityName=".Intents_Act_01" >
+            >
         </activity>
         <activity
             android:name=".Intents_Act_01_b"
@@ -61,6 +60,22 @@
         <activity
             android:name=".Actividad8MasterDetail"
             android:label="@string/Activity8" >
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="listactivity.miguel.com.ejerciciolistactivity.CUSTOM_INTENT">
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LLamadaBroadcast"
+            android:label="@string/title_activity_llamada_broadcast" >
         </activity>
     </application>
 

@@ -3,33 +3,31 @@ package listactivity.miguel.com.ejerciciolistactivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
-import android.view.View;
 import android.view.MenuItem;
+import android.view.View;
 
 
-public class Intents_Act_03_b extends ActionBarActivity {
+public class LLamadaBroadcast extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intents__act_03_b);
-        Bundle b = getIntent().getExtras();
-       int idTest = b.getInt("id");
-        Log.i("ZIIIII", "ZIIIII");
+        setContentView(R.layout.activity_llamada_broadcast);
     }
-
-    public void volver(View view){
-        Intent pasarPrinci = new Intent(this,MainActivity.class);
-        startActivity(pasarPrinci);
+    public void broadcastIntent(View view)
+    {
+        Intent intent=new Intent();
+        intent.setAction("listactivity.miguel.com.ejerciciolistactivity.CUSTOM_INTENT");
+        intent.putExtra("mensaje","hola mundo");
+        sendBroadcast(intent);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_intents__act_03_b, menu);
+        getMenuInflater().inflate(R.menu.menu_llamada_broadcast, menu);
         return true;
     }
 

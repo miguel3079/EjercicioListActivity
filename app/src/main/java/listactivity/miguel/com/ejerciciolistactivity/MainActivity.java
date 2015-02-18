@@ -79,12 +79,13 @@ public class MainActivity extends ListActivity {
         }else if(position == 2) {
         Intent intent2 = new Intent(this, Intents_Act_03.class);
         startActivity(intent2);
-        }else if(position == 8) {
-            Intent intent2 = new Intent(this, Notificaciones.class);
-            startActivity(intent2);
         }
         else if(position == 3) {
             Intent intent2 = new Intent(this, intent_implicitos.class);
+            startActivity(intent2);
+        }
+        else if(position == 4) {
+            Intent intent2 = new Intent(this, LLamadaBroadcast.class);
             startActivity(intent2);
         }
         else if(position == 5) {
@@ -97,6 +98,9 @@ public class MainActivity extends ListActivity {
         }
         else if(position == 7) {
             Intent intent2 = new Intent(this, DialogoConProgress.class);
+            startActivity(intent2);
+        }else if(position == 8) {
+            Intent intent2 = new Intent(this, Notificaciones.class);
             startActivity(intent2);
         }
 
