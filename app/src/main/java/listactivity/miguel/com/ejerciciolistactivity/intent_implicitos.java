@@ -59,7 +59,7 @@ public class intent_implicitos extends ActionBarActivity {
     public void onClickMapa(View v) {
 
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                Uri.parse("http://maps.google.com/maps?saddr=40.3736f4&daddr=-3.919848f"));
+                Uri.parse("https://www.google.es/maps/place/Universidad+Europea+de+Madrid/@40.373061,-3.918825,17z/data=!3m1!4b1!4m2!3m1!1s0xd419031a94d45e5:0x375a8b6ca7a1dc4c?hl=es"));
         startActivity(intent);
     }
 
